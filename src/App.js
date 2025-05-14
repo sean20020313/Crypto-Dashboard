@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import CoinList from './components/CoinList';
+import CoinChart from './components/CoinChart';
+import Estimator from './components/Estimator';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Crypto Dashboard</h1>
+      <CoinList />
+      <CoinChart coinId="bitcoin" />
+      <Estimator />
     </div>
   );
 }
