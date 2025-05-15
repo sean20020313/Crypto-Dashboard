@@ -1,14 +1,9 @@
+// App.js
 import React from 'react';
-import CoinList from './components/CoinList';
-
+import Dashboard from './components/Dashboard';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Crypto Dashboard</h1>
-      <CoinList />
-    </div>
-  );
+  return <Dashboard/>;
 }
 
 export default App;
